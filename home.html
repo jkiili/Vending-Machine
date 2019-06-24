@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vending Machine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/home.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Vending Machine</h1>
+    </div>
+
+    <div class="container" id="main_section">
+        <div class="row">
+            <!--Per item placeholder-->
+            <div class="col-md-8" id="prod_details">
+
+            </div>
+            <!--Right side menu-->
+            <div class="col-md-4" id="right_side">
+                <!--add money-->
+                <div class="form-group">
+                    <label>Total $ In</label>
+                    <br />
+                    <input id="total_in" value="0" readonly />
+                    <br />
+                    <button type="button" class="oxbloodbtn" id="add_dollar" value="0">Add $1.00</button>
+                    <button type="button" class="oxbloodbtn" id="add_quarter" value="0">Add $0.25</button>
+                    <button type="button" class="oxbloodbtn" id="add_dime" value="0">Add $0.10</button>
+                    <button type="button" class="oxbloodbtn" id="add_nickel" value="0">Add $0.05</button>
+                    <hr />
+                </div>
+
+                <!--display messages-->
+                <div class="form-group">
+                    <label>Messages</label>
+                    <input id="messages" readonly/>
+                    <br/>
+                    <br/>
+                    <label>Item</label>
+                    <input type="text" id="product_selection" readonly>
+                    <button type="button" class="goldbtn" id="make_purchase">Make Purchase</button>
+                </div>
+                <hr/>
+                <!--dispense change-->
+                <div class="form-group">
+                    <label>Change</label>
+                    <input type="text" id="change" readonly/>
+                    <br />
+                    <button type="button" class="goldbtn" id="change_return">Change Return</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
